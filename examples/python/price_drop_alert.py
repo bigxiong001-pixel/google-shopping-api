@@ -24,8 +24,7 @@ run = client.actor("xpandalabs/google-shopping-price-monitor").call(run_input={
 
 for p in client.dataset(run["defaultDatasetId"]).iterate_items():
     if p["changeType"] == "down":
-        print(f"DROP   {p['title'][:50]}: {p['previousPrice']} -> {p['price']} {p['currency']} at {p['seller']}"
-              f" (was at {p['previousSeller']})")
+        print(f"DROP   {p['title'][:50]}: {p['previousPrice']} -> {p['price']} {p['currency']} at {p['seller']}")
     elif p["changeType"] == "up":
         print(f"UP     {p['title'][:50]}: {p['previousPrice']} -> {p['price']} {p['currency']}")
     elif p["belowTargetPrice"]:

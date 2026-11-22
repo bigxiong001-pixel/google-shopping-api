@@ -36,7 +36,7 @@ A real row: [`sample-output/product-row.json`](sample-output/product-row.json).
 | `delivery`, `freeDelivery`, `returns` | As Google shows them |
 | `rating`, `reviewCount` | Product rating and number of reviews |
 | `productId`, `position`, `googlePosition` | Google's id; position after your filters and on Google |
-| `changeType`, `previousPrice`, `previousSeller`, `priceChangePct`, `lowestPriceSeen`, `belowTargetPrice` | Changes since your previous run |
+| `changeType`, `previousPrice`, `priceChangePct`, `lowestPriceSeen`, `belowTargetPrice` | Changes since your previous run, per product and store |
 
 ## Main inputs
 
